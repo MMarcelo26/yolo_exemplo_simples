@@ -1,7 +1,15 @@
 import cv2
 import numpy as np
-
-cap = cv2.VideoCapture(0)  # Ou use a URL da câmera IP
+try:
+    # Tenta conectar à câmera IP
+    #cap = cv2.VideoCapture(http://usuario:senha@http://192.168.18.192:8080/video:8080/video)
+    #cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture("http://192.168.18.95:8080/video")
+    if not cap.isOpened():
+        raise Exception("Não foi possível conectar à câmera IP.")
+except Exception as e:
+    print(f"Erro ao conectar à câmera: {e}")
+    exit()
 
 while True:
     ret, frame = cap.read()
@@ -14,6 +22,7 @@ while True:
 
     # Aplica desfoque mais forte para reduzir ruídos
     cinza = cv2.GaussianBlur(cinza, (9, 9), 0)
+
 
     # --- Detecção de Círculos ---
     circulos = cv2.HoughCircles(
@@ -38,6 +47,7 @@ while True:
 
     # --- Detecção de Polígonos (Otimizada) ---
     # Aplica limiarização adaptativa para melhorar a detecção
+
     limiar = cv2.adaptiveThreshold(
         cinza, 255,
         cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
