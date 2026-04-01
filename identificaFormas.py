@@ -3,8 +3,8 @@ import numpy as np
 try:
     # Tenta conectar à câmera IP
     #cap = cv2.VideoCapture(http://usuario:senha@http://192.168.18.192:8080/video:8080/video)
-    cap = cv2.VideoCapture(0)
-    #cap = cv2.VideoCapture("http://192.168.18.95:8080/video")
+    #cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture("http://192.168.18.95:8080/video")
     if not cap.isOpened():
         raise Exception("Não foi possível conectar à câmera IP.")
 except Exception as e:
