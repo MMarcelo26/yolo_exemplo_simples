@@ -1,3 +1,14 @@
+# TODO
+- [ ] documentação da Captura do OpenCV 
+- [ ] Pesquisar Documentação YOLO para identificação de objetos
+  - [ ] Conexão além da rede local
+- [ ] Procurar apps semelhantes ao IPCam para conexão por rede independente
+- [ ] ler Objective Video Quality Assessment Documento Whatsapp
+
+link repo coco yolo database
+https://github.com/ultralytics/ultralytics/blob/main/ultralytics/cfg/datasets/coco.yaml
+
+
 ## Resumo dos Parâmetros-Chave 
 
 ### Funções para Identificação de formas

@@ -21,7 +21,7 @@ while True:
     cinza = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
     # Aplica desfoque mais forte para reduzir ruídos
-    cinza = cv2.GaussianBlur(cinza, (9, 9), 0)
+    cinza = cv2.GaussianBlur(cinza, (3, 3), 0)
 
 
     # --- Detecção de Círculos ---
@@ -82,9 +82,9 @@ while True:
             elif vertices == 5:
                 forma = "Pentagono"
                 cor = (255, 0, 0)  # Azul
-            else:
-                forma = f"Poligono ({vertices} lados)"
-                cor = (255, 255, 0)  # Amarelo
+           # else:
+            #    forma = f"Poligono ({vertices} lados)"
+             #   cor = (255, 255, 0)  # Amarelo
 
             # Desenha o contorno e o nome da forma
             cv2.drawContours(frame, [aproximacao], 0, cor, 2)
