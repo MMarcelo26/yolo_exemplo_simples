@@ -1,7 +1,8 @@
 # TODO
 - [ ] documentação da Captura do OpenCV 
-- [ ] Pesquisar Documentação YOLO para identificação de objetos
-  - [ ] Conexão além da rede local
+- [x] Pesquisar Documentação YOLO para identificação de objetos
+- [ ] Conexão além da rede local (VPN?)
+  YOLO não tem processamento direto da rede, somente usando openCV para mandar o vídeo
 - [ ] Procurar apps semelhantes ao IPCam para conexão por rede independente
 - [ ] ler Objective Video Quality Assessment Documento Whatsapp
 
