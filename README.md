@@ -1,10 +1,10 @@
 # TODO
-- [ ] documentação da Captura do OpenCV 
+- [x] documentação da Captura do OpenCV 
 - [x] Pesquisar Documentação YOLO para identificação de objetos
 - [ ] Conexão além da rede local (VPN?)
   YOLO não tem processamento direto da rede, somente usando openCV para mandar o vídeo
 - [ ] Procurar apps semelhantes ao IPCam para conexão por rede independente
-- [ ] ler Objective Video Quality Assessment Documento Whatsapp
+- [x] ler Objective Video Quality Assessment Documento Whatsapp
 
 link repo coco yolo database
 https://github.com/ultralytics/ultralytics/blob/main/ultralytics/cfg/datasets/coco.yaml
