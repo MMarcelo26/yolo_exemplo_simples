@@ -2,7 +2,7 @@ import cv2
 from ultralytics import YOLO
 
 # Configurações
-stream_url = "http://192.168.18.103:8080/video"
+stream_url = "http://192.168.18.103:8080/video"#Ajustar o IP para cada iteração
 modelo = YOLO("yolov8n.pt")  # Modelo nano
 frame_skip = 2  # Pula frames
 frame_count = 0
